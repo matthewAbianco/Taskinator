@@ -14,12 +14,17 @@
   <header>
     <h1 class="page-title">Taskinator</h1>
     <p>Click the button below to add a new task!</p>
+    
+<!--TASK FORM-->
     <form id="task-form">
 
+<!-- ENTER TASK NAME BUTTON-->
       <div class="form-group">
         <input type="text" name="task-name" placeholder="Enter Task Name" />
       </div>
+<!--ENTER TASK NAME BUTTON END-->
 
+<!--PICK A TASK TYPE BUTTON-->
       <div class="form-group">
         <select name="task-type" class="select-dropdown">
           <option value="" disabled selected>Pick a task type</option>
@@ -28,38 +33,50 @@
           <option value="Mobile">Mobile</option>
         </select>
       </div>
+<!--PICK A TASK TYPE BUTTON END-->
 
+<!--ADD TASK BUTTON-->
       <div class="form-group">
         <button class="btn" id="save-task" type="submit">Add Task</button>
       </div>
+<!--ADD TASK BUTTON END-->
     </form>
+<!--TASK FORM END-->
   </header>
 <!--HEADER END-->
 
 
-  <!--Task list -->
-  <main class="page-content">
+<!--TASK LIST START -->
+
+<!--TASKS TO DO COLUMN-->
+  <main class="page-content" id="page-content">
     <section class="task-list-wrapper">
       <h2 class="list-title">Tasks To Do</h2>
       <ul class="task-list" id="tasks-to-do"></ul>
     </section>
+<!--TASKS TO DO END-->
 
-    <!--Tasks In Progress-->
+
+<!--TASKS IN PROGRESS COLUMN-->
     <section class="task-list-wrapper">
       <h2 class="list-title">Tasks In Progress</h2>
       <ul class="task-list" id="task-in-progress"></ul>
     </section>
+<!--TASKS IN PROGRESS END-->
 
-    <!-- Tasks Completed -->
+
+<!--TASKS COMPLETED COLUMN-->
   <section class="task-list-wrapper">
     <h2 class="list-title">Tasks Completed</h2>
     <ul class="task-list" id="tasks-completed"></ul>
   </section>
-
+<!--TASKS COMPLETED END-->
   </main>
+<!-- TASKS LIST END -->
+
 
   <footer>
-    &copy;2020 by Taskinator
+    &copy;2021 by Taskinator
   </footer>
 
   <script src="./assets/js/script.js"></script>

@@ -6,77 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Taskinator</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-<!--HEADER-->
+
   <header>
     <h1 class="page-title">Taskinator</h1>
     <p>Click the button below to add a new task!</p>
-    
-<!--TASK FORM-->
     <form id="task-form">
-
-<!-- ENTER TASK NAME BUTTON-->
       <div class="form-group">
         <input type="text" name="task-name" placeholder="Enter Task Name" />
       </div>
-<!--ENTER TASK NAME BUTTON END-->
-
-<!--PICK A TASK TYPE BUTTON-->
       <div class="form-group">
         <select name="task-type" class="select-dropdown">
-          <option value="" disabled selected>Pick a task type</option>
+          <option value="" selected disabled>Pick a task type</option>
           <option value="Print">Print</option>
           <option value="Web">Web</option>
           <option value="Mobile">Mobile</option>
         </select>
       </div>
-<!--PICK A TASK TYPE BUTTON END-->
-
-<!--ADD TASK BUTTON-->
       <div class="form-group">
         <button class="btn" id="save-task" type="submit">Add Task</button>
       </div>
-<!--ADD TASK BUTTON END-->
     </form>
-<!--TASK FORM END-->
   </header>
-<!--HEADER END-->
 
-
-<!--TASK LIST START -->
-
-<!--TASKS TO DO COLUMN-->
   <main class="page-content" id="page-content">
+    <!-- Tasks To Do -->
     <section class="task-list-wrapper">
       <h2 class="list-title">Tasks To Do</h2>
       <ul class="task-list" id="tasks-to-do"></ul>
     </section>
-<!--TASKS TO DO END-->
 
-
-<!--TASKS IN PROGRESS COLUMN-->
+    <!-- Tasks In Progress -->
     <section class="task-list-wrapper">
       <h2 class="list-title">Tasks In Progress</h2>
-      <ul class="task-list" id="task-in-progress"></ul>
+      <ul class="task-list" id="tasks-in-progress"></ul>
     </section>
-<!--TASKS IN PROGRESS END-->
 
-
-<!--TASKS COMPLETED COLUMN-->
-  <section class="task-list-wrapper">
-    <h2 class="list-title">Tasks Completed</h2>
-    <ul class="task-list" id="tasks-completed"></ul>
-  </section>
-<!--TASKS COMPLETED END-->
+    <!-- Tasks Completed -->
+    <section class="task-list-wrapper">
+      <h2 class="list-title">Tasks Completed</h2>
+      <ul class="task-list" id="tasks-completed"></ul>
+    </section>
   </main>
-<!-- TASKS LIST END -->
-
 
   <footer>
-    &copy;2021 by Taskinator
+    &copy;2020 by Taskinator
   </footer>
 
   <script src="./assets/js/script.js"></script>
